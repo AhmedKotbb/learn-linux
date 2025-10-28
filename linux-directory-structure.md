@@ -1,3 +1,5 @@
+## linux-directory-structure
+
 In Linux, everything is treated as a file even if it is a normal file, a directory, or even a device such as a printer or keyboard. All the directories and files are stored under one root directory which is represented by a forward slash ( / ).
 
 - The Linux directory layout follows the Filesystem Hierarchy Standard (FHS).
@@ -11,41 +13,7 @@ In Linux, everything is treated as a file even if it is a normal file, a directo
 2. Directory Files - These types of files are a warehouse for other file types. It may be a directory file within a directory (subdirectory).
 3. Device Files - In a Windows-like operating system, devices like CD-ROM and hard drives are represented as drive letters like F: G: H, whereas in the Linux system, devices are represented as files. As for example, /dev/sda1, /dev/sda2, and so on.
 
-We know that in a Windows-like operating system, files are stored in different folders on different data drives like C: D: E:, whereas in the Linux/Unix operating system, files are stored in a tree-like structure starting with the root directory,
-
-This tree represents a **standard Linux filesystem layout** based on the **Filesystem Hierarchy Standard**
-
-/
-├── bin/ → Essential command binaries
-├── boot/ → Boot loader files (e.g., kernel, GRUB)
-├── dev/ → Device files
-├── etc/ → System configuration files
-├── home/ → User home directories
-│ ├── user1/
-│ └── user2/
-├── lib/ → Shared libraries for essential binaries
-├── lib64/ → 64-bit libraries (on 64-bit systems)
-├── media/ → Mount point for removable media (USB, CD-ROM)
-├── mnt/ → Temporary mount point for manual mounts
-├── opt/ → Optional software packages
-├── proc/ → Virtual filesystem for process and kernel info
-├── root/ → Home directory for root (administrator)
-├── run/ → Runtime data since last boot
-├── sbin/ → System binaries (used by root/admin)
-├── srv/ → Data for system services (e.g., web/ftp servers)
-├── sys/ → Virtual filesystem for system and hardware info
-├── tmp/ → Temporary files
-├── usr/ → User programs, libraries, documentation
-│ ├── bin/ → Non-essential user command binaries
-│ ├── lib/ → Libraries for user programs
-│ ├── local/ → Locally installed software
-│ ├── share/ → Shared data (man pages, docs)
-│ └── sbin/ → Non-essential system binaries
-└── var/ → Variable files (logs, mail, cache, spool)
-├── log/ → Log files
-├── mail/ → User mailbox files
-├── cache/ → Application cache data
-└── spool/ → Queued tasks (e.g., print jobs, mail)
+We know that in a Windows-like operating system, files are stored in different folders on different data drives like C: D: E:, whereas in the Linux/Unix operating system, files are stored in a tree-like structure starting with the root directory
 
 ### System Configuration Files
 
